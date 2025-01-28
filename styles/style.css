@@ -65,7 +65,9 @@ font-size: 18px;
     padding: 10px 20px;
     margin-top: 30px;
 }
-
+.dark-2{
+    color: #424242;
+}
 .dark-3{
 color: #727272;
 }
@@ -112,16 +114,74 @@ main > section{
 margin-left: 130px;
 max-width: 530px;
 }
+.{
+
+}
 /* facts style */
 .fact-title{
-font-size:45px ;
+font-size: 45px;
 font-weight: 700px;
+margin-bottom: 24px;
+
 }
-.tact-description{
+.fact-description{
     font-size: 16px;
     font-weight: 400px;
+    margin-bottom: 100px;
 }
+/* card design */
+.fact-number{
+    font-size: 45px;
+    font-weight: 600px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size: 20px;
+    font-weight: 600px;
 
+}
+.fact-card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    height: 240px;
+    width: 240px;
+    /* padding-top: 40px; */
+    /* margin: 4px 6px 16px; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.fact-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+    /* sponsor style */
+    .sponsor-title{
+        font-size: 45px;
+        font-weight: 700px;
+        margin-bottom:24px ;
+    }
+    .sponsor-description {
+        font-weight: 400px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .sponsor-info{
+        max-width: 540px;
+        margin:50px auto ;
+        text-align: center;
+      
+    }
+.sponsor-image{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+
+}
+.sponsor-image img{
+    filter: grayscale(100%);
+}
 
 @media screen and (max-width:576px){
     .navbar,
@@ -129,12 +189,26 @@ font-weight: 700px;
     .teams{
         flex-direction: column;
     }
-    .teams-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    .teams-img-container,
+    .fact-content,
+    .sponsor-image
+    {
+        grid-template-columns: 1fr;
+      
+    }
+    .fact-content{
+        justify-content: center;
+        gap: 24px;
+    }
+    .sponsor-image{
+        gap: 50px;
     }
     .your-features{
         margin: 20px;
     }
+
+    
+     
 }
 
 
@@ -145,5 +219,11 @@ font-weight: 700px;
     }
     .your-features{
         margin: 50px auto;
+    }
+    .fact-content,
+    .sponsor-image{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
     }
 }
