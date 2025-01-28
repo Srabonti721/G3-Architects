@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;;
+}
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-links{
+    align-items: center;
+}
+.navbar{
+justify-content: space-between;
+align-items: center;
+}
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700px;
+}
+.dark-1{
+    color: #131313;
+}
+.bg-primary{
+    background-color: rgba(255, 144, 14, 0.1);
+
+}
+.nav-link{
+text-decoration: none;
+font-size: 18px;
+ font-weight: 500px;
+ color: #424242; /*dark-2 */
+    
+}
+.navbar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem ;
+    font-weight: 700px;
+}
+.banner-description{
+    font-size: 16px;
+    font-weight: 400px;
+    margin-top: 40px;
+}button{
+    border-radius: 8px;
+    color: white;
+    border: none;
+    background: rgb(255, 144, 14);
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.banner-img{
+    width: 100%;
+}
+/* main section style */
+.your-features-title{
+    font: size 45px; 
+    font-weight: 500px;
+    }
+    .color-1{
+        color: rgb(114, 114, 114);
+    }
+    .black{
+       color:  rgb(19, 19, 19);
+    }
+    .orange{
+        color: rgb(255, 144, 14);;
+    }
+    
+    .your-features-description{
+    font-size: 16px;
+    font-weight: 400px;
+    }
+
+
+
+
+@media screen and (max-width:576px){
+    .navbar ,.nav-links {
+        flex-direction: column;
+    }
+}
