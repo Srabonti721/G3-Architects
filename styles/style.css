@@ -114,9 +114,38 @@ main > section{
 margin-left: 130px;
 max-width: 530px;
 }
-.{
-
+/* your-features-style */
+.features-title {
+    font-size:45px ;
+    font-weight: 700px;
+    border-left: 5px solid #FF900E;
+    padding: 21px;
 }
+.features-description {
+    padding: 24px;
+    font-size: 16px ;
+    font-weight: 400px;
+}
+.features-card-title{
+    font-size:20px ;
+    font-weight:600px ;
+}
+.features-card-description{
+    font-size:16px ;
+    font-weight:400px ;
+}
+.features-card{
+    padding: 30px;
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.features-content{
+    gap: 100px;
+}
+
+
+
 /* facts style */
 .fact-title{
 font-size: 45px;
@@ -158,6 +187,7 @@ margin-bottom: 24px;
     grid-template-columns: repeat(4, 1fr);
 }
     /* sponsor style */
+
     .sponsor-title{
         font-size: 45px;
         font-weight: 700px;
